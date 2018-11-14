@@ -38,9 +38,13 @@ app.use((request, response, next) => {
 			console.log('Unable to log message');
 		}
 	});
-	response.render('maint.hbs', {
+/*	response.render('maint.hbs', {
 		title: 'Error'
+	});*/
+	response.render('home.hbs', {
+		title: 'Home Page'
 	});
+	
 });
 
 app.get('/', (request, response) => {
