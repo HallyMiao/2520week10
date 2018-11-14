@@ -4,6 +4,8 @@ const hbs = require('hbs');
 const weather = require('./weather.js');
 const fetch = require('node-fetch')
 const fs = require('fs');
+const port = process.env.PORT || 8080;
+
 
 var app = express();
 
